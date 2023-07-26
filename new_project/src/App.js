@@ -16,9 +16,29 @@ function App() {
   return (
     <>
       <Lottie options={{ animationData }} isClickToPauseDisabled style={lottieStyle} />
-      <div style={{ textAlign: "center" }}>
+      {/* <div style={{ textAlign: "center" }}>
         <h1>Hey</h1>
         <p>This is your content.</p>
+      </div> */}
+      <div className='main'>
+        <div className='navbar'>
+          <ul className='nav'>
+            <li>
+              Case Studies
+            </li>
+            <li>
+              Experiments
+            </li>
+            <li>
+              Contact
+            </li>
+          </ul>
+        </div>
+        <div className='card1'>
+          <h1>Riccardo Zanutta</h1>
+          <h3>Interactive Front-end Developer</h3>
+          <button>About Me</button>
+        </div>
       </div>
     </>
   );

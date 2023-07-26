@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1c1d25;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  max-width: 1300px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  float: right;
+}
+li {
+  font-weight: bolder;
+  font-size: large;
+  margin: 0.5rem 1rem;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  color: #b0b2c3;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+}
+li:hover {
   color: white;
+  transition: transform 0.3s ease;
+}
+li::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(88, 105, 234);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: rgb(224, 75, 48);
+  transition: transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ////card1 */
+.card1 {
+  color: white;
+  padding: 7em 6em;
+  font-size: xx-large;
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
+    serif;
 }
